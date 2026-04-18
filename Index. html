@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautham | Portfolio</title>
+    <style>
+        /* CSS: Styling for a Cinematic & Professional Vibe */
+        :root {
+            --primary-bg: #0f172a;
+            --accent-color: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+        }
+
+        h1 { font-size: 4rem; margin-bottom: 0.5rem; color: var(--accent-color); }
+        p.subtitle { font-size: 1.5rem; color: var(--text-dim); }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .btn {
+            background: var(--accent-color);
+            color: var(--primary-bg);
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { opacity: 0.8; transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="userName">GAUTHAM</h1>
+        <p class="subtitle">B.Tech | Engineer | 2 Years Experience</p>
+        <a href="#about" class="btn">View My Work</a>
+    </header>
+
+    <div class="container" id="about">
+        <section class="card">
+            <h2>Professional Profile</h2>
+            <p>B.Tech graduate from <b>Viswajyothi Engineering College</b> with 2 years of proven experience in a private firm. Specialized in delivering technical solutions and streamlining operational workflows.</p>
+        </section>
+
+        <section class="card">
+            <h2>Experience</h2>
+            <p><b>Engineer @ Private Firm</b> (2024 - Present)</p>
+            <ul>
+                <li>Managed end-to-end project execution and quality control.</li>
+                <li>Optimized system performance leading to higher efficiency.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript: Small interaction for a personalized touch
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('h1');
+            
+            // Simple fade-in effect on load
+            header.style.opacity = 0;
+            header.style.transition = "opacity 2s ease-in";
+            
+            setTimeout(() => {
+                header.style.opacity = 1;
+            }, 500);
+
+            console.log("Portfolio for Gautham loaded successfully.");
+        });
+    </script>
+</body>
+</html>
